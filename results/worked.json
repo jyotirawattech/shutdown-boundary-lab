@@ -1,0 +1,67 @@
+{
+  "controls": "same registered jobs; two released after drain-ready, one held past grace",
+  "finite_grace": {
+    "client_responses_observed": {
+      "cancelled": 1,
+      "client_error": 0,
+      "completed": 2,
+      "eof": 0,
+      "rejected": 1
+    },
+    "service": {
+      "admitted": 3,
+      "cancelled": 1,
+      "cleanup_runs": 1,
+      "cleanup_timeouts": 0,
+      "completed": 2,
+      "connections_refused": 0,
+      "deadline_reached": true,
+      "grace_seconds": 0.05,
+      "handler_errors": 0,
+      "protocol_errors": 0,
+      "rejected": 1,
+      "remaining_connections": 0,
+      "remaining_handlers": 0,
+      "remaining_jobs": 0,
+      "remaining_owned_tasks": 0,
+      "remaining_startup": 0,
+      "response_errors": 0,
+      "responses_written": 4,
+      "state": "STOPPED",
+      "writer_close_timeouts": 0
+    }
+  },
+  "immediate": {
+    "client_responses_observed": {
+      "cancelled": 3,
+      "client_error": 0,
+      "completed": 0,
+      "eof": 0,
+      "rejected": 1
+    },
+    "service": {
+      "admitted": 3,
+      "cancelled": 3,
+      "cleanup_runs": 1,
+      "cleanup_timeouts": 0,
+      "completed": 0,
+      "connections_refused": 0,
+      "deadline_reached": true,
+      "grace_seconds": 0.0,
+      "handler_errors": 0,
+      "protocol_errors": 0,
+      "rejected": 1,
+      "remaining_connections": 0,
+      "remaining_handlers": 0,
+      "remaining_jobs": 0,
+      "remaining_owned_tasks": 0,
+      "remaining_startup": 0,
+      "response_errors": 0,
+      "responses_written": 4,
+      "state": "STOPPED",
+      "writer_close_timeouts": 0
+    }
+  },
+  "interpretation": "controlled completion/cancellation trade-off; not a performance benchmark",
+  "scenario": "three-admitted-event-jobs-plus-one-late-request"
+}
